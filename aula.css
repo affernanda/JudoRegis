@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body h1 {
+        font-family: 'Yeseva One, sans-serif';
+        font-size: 100%;
+    }
+
+    .destaque {
+        font-family: 'Yeseva One, sans-serif';
+        font-size: xxx-large;
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .destaquezinho {
+        padding-bottom: 4%;
+    }
+
+    .destaque2 {
+        color:#780000;
+        font-size: xx-large;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    
+    .coluna-esquerda {
+        width: 15%;
+        background-color: #171725;
+        color: white;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 170%;
+        margin-bottom: 30%;
+    }
+
+    .menu-vertical ol {
+        margin-bottom: 30%;
+    }
+    
+    .menu-vertical a {
+        color: white;
+        text-decoration: none;
+        font-size: 100%;
+        display: block;
+        padding: 2%;
+    }
+    
+    .menu-vertical a:hover {
+        color:#171725;
+        background-color: #F5F5F5;
+        border-radius: 4%;
+        border-width: 0.5%;
+        border: #F5F5F5;
+    }
+    
+    footer {
+        background-color: #171725;
+        color: #FFFFFF;
+        padding: 2%;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .termos{
+        margin-left: auto;
+    }
+
+    .textoDoBotao{
+        padding-bottom: 1%;
+    }
+
+    .button {
+        display: inline-flex; /* Usar flex para centralizar */
+        padding: 1px 40px 5px 40px;
+        font-size: 82%;
+        color: #171725;
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: 55px;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.2s;
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        gap: 25%; /* Espaço entre o texto e a imagem */
+    }
+    
+    .button img{
+        width: 25%; /* Ajuste o tamanho da imagem do WhatsApp */
+        height: 25%; /* Ajuste o tamanho da imagem do WhatsApp */
+    }
+
+    .destaque3 {
+        color:#780000;
+        font-size: xxx-large;
+        align-items:first baseline;
+    }
+
+    .parte1 {
+        color: #F5F5F5;
+        padding: 10%;
+        background-color: #171725;
+        justify-content: space-between;
+        align-items:center;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .parte2 {
+        background-color: #780000;
+        padding: 10%;
+        color: #F5F5F5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .container3 {
+        margin: 0 auto;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .treino {
+        border-top: 2px solid #171725;
+        border-bottom: 2px solid #171725;
+        border-left: 2px solid #171725;
+        border-right: 2px solid #171725;
+        border-radius: 10px;
+        width: 50%;
+    }
+
+    .carrossel {
+        position: relative;
+        max-width: 80%; /*Largura do carrossel */
+        max-height: 40%;
+        margin: 0 auto;
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+        padding: 5%;
+        background-color: #F5F5F5;
+        overflow: hidden;
+    }
+    
+    .imagens {
+        display: flex;
+        transition: transform 0.5s ease; /* Transição suave */
+        margin: 0 auto;
+    }
+    
+    .linha {
+        display: flex; /* Imagens em linha */
+        justify-content: space-between;
+        margin: 0 auto; 
+        padding-right: 35%;
+    }
+    
+    .linha img {
+        width: 50%;
+        padding: 2%;
+        height: auto;
+    }
+
+    img {
+        border-radius: 5%;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    button:hover {
+        background-color: rgba(255, 255, 255, 1);
+        transform: translateY(-50%) scale(1.1);
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }

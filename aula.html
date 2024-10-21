@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>  Judô Regis - Nossas Aulas </title>
+    <link rel="stylesheet" href="aula.css">
+    <style>
+        /* Importando as fontes Roboto e Playfair Display */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Usando Roboto como fonte principal */
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Usando Playfair Display para o título */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class = "coluna-esquerda">
+                <a href="index.html"><img src="FOTOS/logo-regis.png" alt="Logo" class="logo"></a>
+                <nav>
+                    <ul class="menu-vertical">
+                        <ol><a href="index.html"><strong>Home</strong></a></ol>
+                        <ol><a href="agendamento.html"><strong>Agendar Aula</strong></a></ol> 
+                        <ol><a href="aula.html"><strong>Nossas Aulas</strong></a></ol>
+                        <ol><a href="sobre.html"><strong>Sobre Nós</strong></a></ol>
+                    </ul>
+                </nav>
+            </div>
+
+        <div class="parte2" style="background-image: url('FOTOS/5.png'); background-size: cover;" >
+            <div class="container3">
+                    <h1 class="destaque"> Nossas Aulas </h1> 
+                    <br>
+                    <p style="text-align: justify; font-size: x-large;"> As aulas de judô, na Judô Regis, são ideais para quem busca um aprendizado personalizado.
+                    <br>Com acompanhamento exclusivo, o aluno evolui no próprio ritmo. 
+                    <br>Recebendo instruções de acordo com as técnicas que mais precisa desenvolver. 
+                    <br>Permitindo um progresso rápido e eficiente, tanto para iniciantes como para avançados.</p>
+                    <br>
+                    <div>
+                        <p style="font-size: x-large;" class="textoDoBotao"><strong> Entre em contato com nossa equipe pelo Whatsapp e agende a sua aula!</strong></p>
+                        <br>
+                        <a href="https://wa.me/551199999999" target="_blank" class="button"><strong>Fale Conosco!</strong><img src="FOTOS/WhatsApp.png"></a>
+                    </div>
+            </div>
+            <img src="FOTOS/judo1.jpg" alt="Judo sendo praticado"  class="treino">
+        </div>
+        </div>
+        <div class="parte1">
+            <div>
+                <img src="FOTOS/Heart with Pulse.png">
+                <h1 align="center">Saúde</h1>
+            </div>
+            <p>Fortalece o corpo e melhora a coordenação</p>
+            
+            <div>
+                <img src="FOTOS/High Five.png">
+                <h1 align="center">Confiança</h1>
+            </div>
+            <p>Desenvolve a autoestima e segurança</p>
+
+            <div>
+                <img src="FOTOS/Purposeful man.png">
+                <h1 align="center">Concentração</h1>
+            </div>
+            <p>Melhora o foco e o autocontrole</p>
+
+            <div>
+                <img src="FOTOS/Group Task.png">
+                <h1 align="center">Socialização</h1>
+            </div>  
+            <p>Estimula o trabalho em equipe e novas amizades.</p>
+        </div>
+        <div style="background-image: url('FOTOS/3.png'); background-size: cover;" >
+            <br>
+            <div class="carrossel">
+                <div class="destaque"><h1 align="center">Nossas Aulas</h1></div>
+                <div class="imagens">
+                    <div class="linha">
+                        <img src="FOTOS/10.jpg" alt="Imagem 1">
+                        <img src="FOTOS/11.jpg" alt="Imagem 2">
+                        <img src="FOTOS/12.jpg" alt="Imagem 3">
+                    </div>
+                    <div class="linha">
+                        <img src="FOTOS/13.jpg" alt="Imagem 4">
+                        <img src="FOTOS/7.jpg" alt="Imagem 5">
+                        <img src="FOTOS/8.jpg" alt="Imagem 6">
+                    </div>
+                    <div class="linha">
+                        <img src="FOTOS/luta1.jpg" alt="Imagem 4">
+                        <img src="FOTOS/luta2.jpg" alt="Imagem 5">
+                        <img src="FOTOS/alunos4.jpg" alt="Imagem 6">
+                    </div>
+                <br>
+                <button class="prev" onclick="mudarLinha(-1)">&#10094;</button>
+                <button class="next" onclick="mudarLinha(1)">&#10095;</button>
+            </div>
+        </div>  
+    </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer">
+            <h2>Judô Regis</h2>
+        </div>
+        <p class="termos">© JUDÔ REGIS | Dev.: Fernanda Oliveira, Kalliani Lima, Luís Miguel G.</p>         
+        <p class="termos">Todos os direitos reservados 2024</p>
+    </footer>
+    <script src="carrossel.js"></script>
+</body>
+</html>

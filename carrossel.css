@@ -1,0 +1,56 @@
+.carrossel {
+    position:relative;
+    max-width: 50%;
+    min-width: 50%;
+    margin: auto;
+    aspect-ratio: 16/9;
+    border-radius: 10px; /* Adiciona cantos arredondados, se desejado */
+    padding: 10px; /* Espaço interno */
+    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total */
+    /* background-color: #171725; */
+}
+
+.carrossel-imagem {
+    width: 40%; /* Faz com que a imagem ocupe toda a largura do carrossel */
+    display: flex; /* Para centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.carrossel img {
+    width: 40%; /* As imagens ocuparão 100% da largura da div pai */
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.prev, .next{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.carrossel .prev{
+    right: 75%;
+}
+
+.carrossel .next{
+    left: 75%;
+}
+
+#imgs{
+    border-top: 2px solid #171725;
+    border-bottom: 2px solid #171725;
+    border-left: 2px solid #171725;
+    border-right: 2px solid #171725;
+    border-radius: 10px;
+}
