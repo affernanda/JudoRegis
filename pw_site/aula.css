@@ -13,10 +13,6 @@
         padding: 0;
     }
     
-    body h1 {
-        font-family: 'Yeseva One, sans-serif';
-        font-size: 100%;
-    }
 
     .destaque {
         font-family: 'Yeseva One, sans-serif';
@@ -77,6 +73,7 @@
         background-color: #171725;
         color: #FFFFFF;
         padding: 2%;
+        text-align: right;
     }
     
     .footer-container {
@@ -90,26 +87,31 @@
     }
 
     .textoDoBotao{
-        padding-bottom: 1%;
+        font-size: x-large;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .button {
-        display: inline-flex; /* Usar flex para centralizar */
-        padding: 1px 40px 5px 40px;
-        font-size: 82%;
+        display: flex; /* centraliza */
+        padding: 5px 200px;
+        font-size: large;
         color: #171725;
         background-color: #F5F5F5;
         border: none;
         border-radius: 55px;
         text-decoration: none;
         transition: background-color 0.3s, transform 0.2s;
-        align-items: center; /* Centraliza o conteúdo verticalmente */
-        gap: 25%; /* Espaço entre o texto e a imagem */
+        align-items: center; 
+        gap: 10px;
+        justify-content: center;
+
     }
     
     .button img{
-        width: 25%; /* Ajuste o tamanho da imagem do WhatsApp */
-        height: 25%; /* Ajuste o tamanho da imagem do WhatsApp */
+        width: 25%;
+        height: 25%; 
     }
 
     .destaque3 {
@@ -123,9 +125,21 @@
         padding: 10%;
         background-color: #171725;
         justify-content: space-between;
-        align-items:center;
         display: flex;
-        margin: 0 auto;
+    }
+
+    .parte1 div {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .parte1 h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .parte1 p {
+        text-align: center;
     }
 
     .parte2 {
@@ -140,8 +154,14 @@
 
     .container3 {
         margin: 0 auto;
-        flex: 1;
-        margin-right: 20px;
+        max-width: 800px;
+        padding: 20px;
+    }
+
+    .container3 p {
+        font-size: medium;
+        line-height: 1.5;
+        margin-bottom: 20px;
     }
 
     .treino {
@@ -150,7 +170,10 @@
         border-left: 2px solid #171725;
         border-right: 2px solid #171725;
         border-radius: 10px;
-        width: 50%;
+        width: 40%;
+        margin-left: 100px;
+        margin-right: auto;
+        display: block;
     }
 
     .carrossel {
@@ -213,3 +236,9 @@
     .next {
         right: 10px;
     }
+
+    .texto-aulas {
+        font-size: large;
+        line-height: 1.5;
+    }
+

@@ -10,11 +10,22 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
         body {
-            font-family: 'Roboto', sans-serif; 
+            font-family: 'Roboto', sans-serif;
+            background-color: #171725;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
+            font-size: 70px;
+            text-align: left;
+            margin: 50px 0;
+            color: white;
+            padding-left: 200px;
         }
 
         h2 {
@@ -22,8 +33,18 @@
         }
 
         .container {
-            display: flex;
-            height: 100vh; 
+            display: flex; 
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .coluna-esquerda {
+            width: 15%;
+            background-color: #171725;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
         }
 
         .conteudo-principal {
@@ -39,6 +60,17 @@
             text-align: right;
             font-size: 10px;
         }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .termos {
+            margin-left: auto;
+        }
+
     </style> 
 </head>
 
@@ -127,17 +159,18 @@
                 </ul>
             </div>
         </div>
-
     </main>
+</div>
 
-
-    <script src="efeito.js"></script>
      <footer>
         <div class="footer-container">
+            <h2 style="margin: 0; flex-grow: 1;">Judô Regis</h2>
         </div>
-        <p class="termos">© JUDÔ REGIS | Dev.: Fernanda Oliveira, Kalliani Lima, Luís Miguel G.</p>         
+        <p class="termos">© JUDÔ REGIS | Dev.: Fernanda Oliveira, Kalliani Lima, Luís Miguel G.</p>       
         <p class="termos">Todos os direitos reservados 2024</p>
     </footer>
+
+    <script src="efeito.js"></script>
 
 </body>
 </html>

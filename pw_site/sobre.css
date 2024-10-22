@@ -17,6 +17,9 @@ body {
     background-color: #171725;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .coluna-esquerda {
@@ -31,24 +34,27 @@ body {
 footer {
     background-color: #171725;
     color: #FFFFFF;
-    padding: 20px;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 2%;
     text-align: right;
-    font-size: 10px;
+    font-size: medium;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
 .termos{
-    margin-left: auto;
+    margin-left: 70px;
+    font-size: medium;
 }
 
 .container {
@@ -206,5 +212,3 @@ li {
     position: absolute;
     top: 60px;
 }
-
-
