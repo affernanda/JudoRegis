@@ -8,9 +8,9 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 70px;
     text-align: left;
-    margin: 50px 0;
+    margin: 3% 0;
     color: white;
-    padding-left: 200px;
+    padding-left: 13%;
 }
 
 body {
@@ -23,13 +23,14 @@ body {
 }
 
 .coluna-esquerda {
-    width: 15%; /* fixa da coluna */
-    background-color: #171725;
-    color: white;
-    padding: 20px; 
-    position: fixed;
-    height: 100vh; /* coluna ocupar toda a altura da tela */
-}
+        width: 15%;
+        background-color: #171725;
+        color: white;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 footer {
     background-color: #171725;
@@ -66,10 +67,12 @@ footer {
     width: 15%;
     background-color: #171725;
     color: white;
-    padding: 20px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh; /* altura */
 }
 
 .coluna-esquerda a {
@@ -82,21 +85,18 @@ footer {
 
 .logo {
     width: auto;
-    margin-bottom: 20px;
-    height: auto;
-    max-width: 100%;
-    max-height: 150px;
-    margin-bottom: 20px;
+    padding-bottom: 10%;
+    margin-top: 50px; /* Espaço do topo */
     display: block;
-    margin: 0 auto 20px;
 }
 
 .menu-vertical {
-    width: 100%
+    width: 100%;
+    margin-top: auto;
 }
 
 .menu-vertical ol {
-    margin-bottom: 10px;
+    margin-bottom: 30%;
     padding: 0;
     list-style: none;
 }
@@ -104,18 +104,17 @@ footer {
 .menu-vertical a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 100%;
     display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 2%;
 }
 
 .menu-vertical a:hover {
     color:#171725;
+        background-color: #F5F5F5;
+        border-radius: 4%;
+        border-width: 0.5%;
+        border: #F5F5F5;
 }
 
 .conteudo-principal {
@@ -178,7 +177,8 @@ footer {
 .foto-sensei {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px; /*espaço abaixo da foto*/
+    margin-bottom: 1%; /*espaço abaixo da foto*/
+    top: 10%;
 }
 
 .foto-sensei img {
@@ -207,8 +207,8 @@ li {
     width: 4px;
     background-color: white;
     height: 130px; /*altura*/
-    margin-left: 160px;
-    margin-top: 40px;
+    margin-left: 6%;
+    margin-top: 2%;
     position: absolute;
     top: 60px;
 }

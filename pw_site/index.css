@@ -49,13 +49,13 @@
         margin: 0 200px;
         max-width: 600px;
         padding: 20px;
-        
-
     }
 
     .logo {
-        width: 150%;
+        width: auto;
         margin-bottom: 30%;
+        margin-top: 20%;
+        display:block;
     }
 
     .menu-vertical ol {
